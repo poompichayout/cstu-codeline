@@ -1,0 +1,23 @@
+{
+  "name": "cstu_codeline_server",
+  "version": "1.0.1",
+  "description": "api services for cstu_codeline",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "poompichayout kongpiam",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

@@ -6,7 +6,11 @@ const ElderSchema = new Schema(
 			type: String,
 			required: true,
 		},
-		raw_name: {
+		firstname: {
+			type: String,
+			required: true,
+		},
+		lastname: {
 			type: String,
 			required: true,
 		},

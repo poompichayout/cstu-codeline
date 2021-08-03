@@ -18,8 +18,16 @@ const FreshmenSchema = new Schema(
 			type: String,
 			required: true,
 		},
-		birthday: {
-			type: Date,
+		gender: {
+			type: String,
+			required: true,
+		},
+		picture_href: {
+			type: String,
+			required: true,
+		},
+		birthdate: {
+			type: String,
 			required: false,
 		},
 	},

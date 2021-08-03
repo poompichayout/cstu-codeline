@@ -2,6 +2,8 @@ import axios from 'axios';
 import express from 'express';
 import Elder from '../models/Elder';
 import Freshmen from '../models/Freshmen';
+import jwt from 'jsonwebtoken';
+import { secret } from '../config';
 const router = express.Router();
 
 router.post('/login', async (req, res) => {
@@ -31,17 +33,40 @@ router.post('/login', async (req, res) => {
 		);
 
 		var data = await Elder.findOne({ student_id: username }).lean();
-		var role = "elder";
+		var role = 'elder';
 		if (!data) {
 			data = await Freshmen.findOne({ student_id: username }).lean();
-			role = "freshmen";
+			role = 'freshmen';
 			if (!data) {
-				return res.status(400).send('username not found');
+				return res.status(400).json({ message: 'Username not found'});
 			}
+			var raw_name = data.raw_name;
+		} else {
+			raw_name = data.firstname + ' ' + data.lastname;
 		}
 
-		return res.status(201).send({ ...data, role });
+		let token = jwt.sign(
+			{
+				user_id: data._id,
+				student_id: data.student_id,
+				raw_name,
+				nickname: data.nickname,
+				role,
+			},
+			secret,
+			{ expiresIn: '6h' }
+		);
+
+		let result = {
+			token: `Bearer ${token}`,
+			expiresIn: 500,
+		};
+
+		return res
+			.status(201)
+			.send({ ...data, message: response.data.message, ...result, role });
 	} catch (error) {
+		console.log(error);
 		return res.status(error.response.status).json(error.response.data);
 	}
 });

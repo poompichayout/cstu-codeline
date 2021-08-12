@@ -1,5 +1,5 @@
 upstream gateway {
-  server api-server:8080;
+  server api-server:8861;
 }
 
 server {

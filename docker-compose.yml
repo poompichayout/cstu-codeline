@@ -14,14 +14,13 @@ services:
       VIRTUAL_HOST: http://178.128.118.182/
       LETSENCRYPT_HOST: http://178.128.118.182/
     volumes:
-      - ./nginx/conf/nginx.conf:/etc/nginx/conf/nginx.conf:ro
       - ./nginx/conf.d:/etc/nginx/conf.d:ro
     depends_on:
       - api-server
       - client
 
   client:
-    image: oasurastudio/codeline-cstu-react
+    image: oasurastudio/codeline-cstu-react:latest
     build:
       context: ./
       dockerfile: ./client/Dockerfile.prod
@@ -43,7 +42,7 @@ services:
       - NODE_ENV=production
       - SECRET=${SECRET}
       - DEV_DB=${DEV_DB}
-      - DB_CONNECTION=
+      - DB_CONNECTION=${DB_CONNECTION}
     ports:
       - "8861:8861"
 

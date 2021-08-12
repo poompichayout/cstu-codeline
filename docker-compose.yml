@@ -39,9 +39,9 @@ services:
       - /usr/src/server/node_modules
     environment:
       - NODE_ENV=development
-      - 
-    env_file:
-      - .env
+      - SECRET=${SECRET}
+      - DEV_DB=${DEV_DB}
+      - DB_CONNECTION=
     ports:
       - "8861:8861"
     depends_on:

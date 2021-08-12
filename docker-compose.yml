@@ -1,15 +1,14 @@
 version: "3.4"
 
 services:
-  nginx:
+  nginx-proxy:
+    image: jwilder/nginx-proxy:alpine
+    container_name: nginx-proxy
     restart: always
-    build:
-      context: ./
-      dockerfile: ./nginx/Dockerfile
     ports:
-      - "8080:8080"
-    environment:
-      - NGINX_LE_TZ
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
     depends_on:
       - api-server
       - client

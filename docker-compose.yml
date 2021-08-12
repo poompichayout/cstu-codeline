@@ -2,13 +2,20 @@ version: "3.4"
 
 services:
   nginx-proxy:
-    image: jwilder/nginx-proxy:alpine
-    container_name: nginx-proxy
-    restart: always
-    ports:
-      - "80:80"
+    image: nginx:stable-alpine
+    container_name: codeline_nginx
+    restart: unless-stopped
+    networks:
+      - webproxy
+      - default
+    expose:
+      - "80"
+    environment: 
+      VIRTUAL_HOST: http://178.128.118.182/
+      LETSENCRYPT_HOST: http://178.128.118.182/
     volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./nginx/conf/nginx.conf:/etc/nginx/conf/nginx.conf:ro
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
     depends_on:
       - api-server
       - client
@@ -17,13 +24,10 @@ services:
     build:
       context: ./
       dockerfile: ./client/Dockerfile.prod
-    volumes:
-      - ./client:/usr/src/client:ro
-      - /usr/src/client/node_modules
     depends_on:
       - api-server
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
       - CHOKIDAR_USEPOLLING=true
       - CI=true
     ports:
@@ -34,34 +38,19 @@ services:
     build:
       context: ./
       dockerfile: ./server/Dockerfile.prod
-    volumes:
-      - ./server:/usr/src/server:ro
-      - /usr/src/server/node_modules
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
       - SECRET=${SECRET}
       - DEV_DB=${DEV_DB}
       - DB_CONNECTION=
     ports:
       - "8861:8861"
-    depends_on:
-      - mongo
-
-  mongo:
-    image: mongo:latest
-    volumes:
-      - mongo-db:/data/db
-    ports:
-      - "27017:27017"
-    environment:
-      - MONGO_INITDB_DATABASE=codeline
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=admin
-volumes:
-  mongo-db:
 
 networks:
   default:
     external:
       name:
-        webproxy
+        web_network
+  webproxy:
+    external: 
+      name: webproxy

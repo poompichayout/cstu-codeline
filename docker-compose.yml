@@ -39,6 +39,7 @@ services:
       - /usr/src/server/node_modules
     environment:
       - NODE_ENV=development
+      - 
     env_file:
       - .env
     ports:
@@ -58,3 +59,9 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=admin
 volumes:
   mongo-db:
+
+networks:
+  default:
+    external:
+      name:
+        webproxy

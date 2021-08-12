@@ -21,6 +21,7 @@ services:
       - client
 
   client:
+    image: oasurastudio/codeline-cstu-react
     build:
       context: ./
       dockerfile: ./client/Dockerfile.prod

@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node -r esm server.js",
-    "dev": "set NODE_ENV=development&& nodemon -r esm server.js"
+    "dev": "set NODE_ENV=development&& nodemon -L -r esm server.js"
   },
   "author": "poompichayout kongpiam",
   "license": "ISC",

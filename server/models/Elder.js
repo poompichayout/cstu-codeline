@@ -18,8 +18,8 @@ const ElderSchema = new Schema(
 			type: String,
 			required: true,
 		},
-		freshmencode: {
-			type: [String],
+		code_id: {
+			type: String,
 		},
 	},
 	{ timestamps: false }

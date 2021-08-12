@@ -1,4 +1,5 @@
-require('dotenv').config();
+const path = require('path')
+require('dotenv').config({ path: '../.env' });
 const { NODE_ENV, DB_CONNECTION, DEV_DB, SECRET } = process.env;
 
 let db_connection = NODE_ENV === 'development' ? DEV_DB : DB_CONNECTION;

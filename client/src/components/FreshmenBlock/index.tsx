@@ -1,13 +1,20 @@
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { Fade } from "react-awesome-reveal";
-import { MiddleBlockSection, Content, ContentWrapper } from "./styles";
+import { MiddleBlockSection, ContentWrapper } from "./styles";
+import TextArea from "../../common/TextArea";
+import Input from "../../common/Input";
 import jwtDecode from "jwt-decode";
 import { useState } from "react";
 
 interface UserData {
-  raw_name: string;
+  firstname: string;
+  lastname: string;
   nickname: string;
+  hint1: string;
+  hint2: string;
+  hint3: string;
+  hint4: string;
 }
 
 interface FreshmenBlockProps {
@@ -18,7 +25,9 @@ interface FreshmenBlockProps {
 }
 
 const MiddleBlock = ({ title, content, button, t }: FreshmenBlockProps) => {
-  const [user] = useState<UserData>(jwtDecode(localStorage.getItem("$IevTd") as string));
+  const [user] = useState<UserData>(
+    jwtDecode(localStorage.getItem("$IevTd") as string)
+  );
 
   return (
     <MiddleBlockSection>
@@ -27,12 +36,33 @@ const MiddleBlock = ({ title, content, button, t }: FreshmenBlockProps) => {
           <ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
               <h6 className="app">{t(title) + user.nickname}</h6>
-              {content.map((value, index) => (
-                <div key={index}>
-                <p>{"คำใบ้รอบที่ "+ (index + 1)}</p>
-                <Content>{t(value)}</Content>
-                </div>
-              ))}
+              <TextArea
+                name="คำใบ้รอบที่ 1"
+                placeholder=""
+                value={user.hint1}
+                onChange={() => {}}
+              />
+              <Input
+                name="คำใบ้รอบที่ 2"
+                placeholder="รอวันที่ 23 สิงหาคม 2564"
+                value="รอวันที่ 23 สิงหาคม 2564"
+                readOnly={true}
+                onChange={() => {}}
+              />
+              <Input
+                name="คำใบ้รอบที่ 3"
+                placeholder="รอวันที่ 6 กันยายน 2564"
+                value="รอวันที่ 6 กันยายน 2564"
+                readOnly={true}
+                onChange={() => {}}
+              />
+              <Input
+                name="คำใบ้รอบที่ 4"
+                placeholder="รอวันที่ 20 กันยายน 2564"
+                value="รอวันที่ 20 กันยายน 2564"
+                readOnly={true}
+                onChange={() => {}}
+              />
             </Col>
           </ContentWrapper>
         </Row>

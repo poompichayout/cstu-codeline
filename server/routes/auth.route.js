@@ -38,21 +38,46 @@ router.post('/login', async (req, res) => {
 			data = await Freshmen.findOne({ student_id: username }).lean();
 			role = 'freshmen';
 			if (!data) {
-				return res.status(400).json({ message: 'Username not found'});
+				return res.status(400).json({ message: 'ไม่พบข้อมูลสายรหัสของท่าน'});
 			}
-			var raw_name = data.raw_name;
-		} else {
-			raw_name = data.firstname + ' ' + data.lastname;
+		}
+
+		if(role === 'elder') {
+			const code_id_list = data.code_id.split(";");
+			var codeline = await Promise.all(code_id_list.map(async (code_id) => {
+				const codeline_data = await Freshmen.findOne({ code_id }).lean();
+				return {
+					codeline_student_id: codeline_data.student_id,
+					codeline_firstname: codeline_data.firstname,
+					codeline_lastname: codeline_data.lastname,
+					codeline_favorite_food: codeline_data.favorite_food,
+					codeline_ig: codeline_data.ig,
+					codeline_facebook: codeline_data.facebook,
+					codeline_wording: codeline_data.wording,
+				}
+			}))
+			
+		}
+
+		const sign_data = role === 'freshmen'? {
+			student_id: data.student_id,
+			firstname: data.firstname,
+			lastname: data.lastname,
+			nickname: data.nickname,
+			role,
+			hint1: data.hint1,
+		}:
+		{
+			student_id: data.student_id,
+			firstname: data.firstname,
+			lastname: data.lastname,
+			nickname: data.nickname,
+			role,
+			codeline,
 		}
 
 		let token = jwt.sign(
-			{
-				user_id: data._id,
-				student_id: data.student_id,
-				raw_name,
-				nickname: data.nickname,
-				role,
-			},
+			sign_data,
 			secret,
 			{ expiresIn: '6h' }
 		);
@@ -66,17 +91,18 @@ router.post('/login', async (req, res) => {
 			.status(201)
 			.send({ ...data, message: response.data.message, ...result, role });
 	} catch (error) {
-		console.log(error);
 		return res.status(error.response.status).json(error.response.data);
 	}
 });
 
 router.post('/add-elder', async (req, res) => {
-	const { student_id, raw_name, nickname } = req.body;
+	const { code_id, student_id, firstname, lastname, nickname } = req.body;
 	try {
 		await Elder.create({
+			code_id,
 			student_id,
-			raw_name,
+			firstname,
+			lastname,
 			nickname,
 		});
 

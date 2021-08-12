@@ -50,17 +50,6 @@ const Header = ({ t }: any) => {
     };
     return (
       <>
-        <CustomNavLinkSmall
-          onClick={() => {
-            if (window.location.pathname === "/") {
-              scrollTo("about");
-            } else {
-              window.location.href = "/";
-            }
-          }}
-        >
-          <Span>{t("รายละเอียดการเล่น")}</Span>
-        </CustomNavLinkSmall>
         {user?.role === "freshmen" ? (
           <CustomNavLinkSmall
             onClick={() => (window.location.href = "/freshmen")}

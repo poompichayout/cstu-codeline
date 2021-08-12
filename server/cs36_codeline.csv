@@ -1,69 +1,132 @@
-raw_name,nickname,student_id,gender,birthdate,picture_href
-ณัฐภัทร วงศ์สวัสดิ์กุล,ก้อง,6409610612,ชาย,21-เม.ย.-46,https://drive.google.com/open?id=1Jn452eYu8aOEjeUZy58NpEWaBSBh-Svv
-พสชนันท์ บุษบา,ซัน,6409610661,หญิง,15-เม.ย.-46,https://drive.google.com/open?id=1RNTl_zrT3axrKIwywK7yQvaIdrTbyBxj
-ภัทรพล ทองยอดแก้ว,นาย,6409682579,ชาย,31-ก.ค.-45,https://drive.google.com/open?id=1q_tdJGLQZVFN7fNg_TxcJrea0qk3cNVT
-ยัสมิน บือแนสะเตง,มิ้น,6409610711,หญิง,6-มิ.ย.-45,https://drive.google.com/open?id=1yhy7nJ5tK2AhDHwuNj5YkzosEpem6CM1
-ศักย์ศรณ์ สวัสดีรักษา,พีพี,6409682884,ชาย,15-ก.ค.-45,https://drive.google.com/open?id=1H1fmPXXopKRO5eVhewzhP0W_nWxnPJpp
-อเล็กซ์ เยนี,อเล็ก,6409682967,ชาย,22-ก.ค.-45,https://drive.google.com/open?id=15Vgx96IvfAamSF_38lpsdNiweHFcYgnj
-กรกนก วรรณชมภู,กัญจน์,6409682520,ชาย,15-เม.ย.-46,https://drive.google.com/open?id=1ri_uVTmjQDIXW5Ln2p4VFc6V2lMdZt5C
-กฤตเมธ ลิมปวิทยาพร,ต้า,6409682603,ชาย,3-พ.ค.-46,https://drive.google.com/open?id=1dioia5SuH5f-wuM83LWTpqPQVzegee-Y
-ก้องภพ อุทธสิงห์,ตาว ตาว,6409680037,ชาย,13-มิ.ย.-46,https://drive.google.com/open?id=1Ttt8GVrUayhraEmKjcmA7M5krRlenscA
-กัญญาพัชร สามี,เนย,6409682611,หญิง,20-ม.ค.-46,https://drive.google.com/open?id=1xvOTGycKHTvnG4EaIerGnN_F1mUhFAI0
-กันตภณ ว่องพรรณงาม,ไอซ์,6409682629,ชาย,30-ก.ค.-44,https://drive.google.com/open?id=1w-LUsP9SYHlgNZGOSCI0k2lwTLiPY1qs
-กัลยวรรธน์ เฉลิมไทย,ออมสิน,6409490056,หญิง,11-พ.ย.-45,https://drive.google.com/open?id=1Z9DXOM9k4u-Pex-PaV3nAXdV6hxTnZre
-ขจรเกียรติ แสงสุริย์,จอร์เจีย,6409610588,ชาย,30-ต.ค.-45,https://drive.google.com/open?id=1Iqs7okslBV7O6fcpnbv-fEcZzhVhc3Ix
-ชญานนท์ ขันฤทธิ์,ไรเฟิล,6409682538,ชาย,20-ต.ค.-45,https://drive.google.com/open?id=1vcLGkYNq7R3ox6t2UasYKM1KAlPsPO-W
-ชนนิกานต์ สุวรรณธูป,จุ๊บจิ๊บ,6409680078,หญิง,12-ก.ค.-45,https://drive.google.com/open?id=1BJNu7ogyFraPOzlW-JXuU2jfGSFWWgpQ
-ฐิติพงษ์ จันทรอาภา,ซิโก้,6409682652,ชาย,16-ก.พ.-46,https://drive.google.com/open?id=1K-DcDeyeQ8xuFkwKq0V9O2oYWJpxHv2g
-ณธรรม ทองเอียง,เติร์ก,6409610604,ชาย,18-ส.ค.-46,https://drive.google.com/open?id=1GeVI-E2nij8ZQqWJ4UGbQBtFPi1zuM5j
-ณภัทร ดอนมงคล,หนุน,6409680052,หญิง,17-มี.ค.-46,https://drive.google.com/open?id=1iZZGgjCcnbfHGeNGZGYDhgsNasm5n97Z
-ณหทัย บุญรอด,ฟลุค,6409682686,หญิง,23-มิ.ย.-46,https://drive.google.com/open?id=1Huzo2x_vJ4b4rYsHSxGxSF0nNqC6Ruj6
-ณัฏฐณรงค์ เที่ยงจิตต์,ไนน์,6409680029,ชาย,12-พ.ย.-46,https://drive.google.com/open?id=1dGcnAM7caxhWSrgX1gFoVLAvMdTRQegd
-ณัฐญาดา สมานพงษ์,ปาล์ม,6409620033,หญิง,19-พ.ย.-45,https://drive.google.com/open?id=1l-wMAm7mSpp_BJOKGX16rY83EpDJq_Cg
-ณัฐณิชา พินิจสัจจธรรม,มิ้ว,6409682694,หญิง,1-พ.ค.-46,https://drive.google.com/open?id=1t7KCO1zvzd4bMLRvjNiZcv8drc_Nwene
-ณัฐพร แก้วมณี,นัท,6409682710,ขาย,6-พ.ค.-44,https://drive.google.com/open?id=1FpWsDTSlW4o2968FNnr-QQ4xMPaE821u
-ณัฐพร เอี่ยมสุวรรณ์,ไนท์,6409682702,หญิง,26-ก.ย.-45,https://drive.google.com/open?id=1y8E2do7DilNmRbgLIEYw96KzsBGsC_4f
-ณิชมน เกตุแก้ว,เนิส,6409682728,หญิง,22-ธ.ค.-45,https://drive.google.com/open?id=1rB4EfK7ppGFyTgdRa26EvOGUYO8n2G_D
-ธนากร ชัยรัตนธนานนท์,ต้า,6409610620,ชาย,26-ม.ค.-46,https://drive.google.com/open?id=1H2hGi6PHQVt7eVeET06KzD2ySTXZVbTl
-นพพร ชมภูโคตร,ปาร์ค,6409680011,ชาย,16-ธ.ค.-45,https://drive.google.com/open?id=1oaZk4nG6n8A8UVEsO_Shzwrd6AG45lZN
-นภาภรณ์ ตรีพลอักษร,ฟิวส์,6409610638,หญิง,19-พ.ค.-46,https://drive.google.com/open?id=1NC2_KBjSf-JBbB0LGC6scHMi-P8uSOkA
-นันทกร ลามอ,ยากอ,6409682553,ชาย,2-มี.ค.-46,https://drive.google.com/open?id=1G7YmOTiSGFqMZ0LzNmytXET302hPMjIO
-นันทวัฒน์ สุระแสง,ฟิว,6409682769,ชาย,16-มี.ค.-45,https://drive.google.com/open?id=1vSKRzlYZ_xo9pCjmLXoY2PKeeLjutPEc
-บัวชมพู ประถานัง,พู่,6409610646,หญิง,7-ต.ค.-45,https://drive.google.com/open?id=1iOe0NBzTr8CGbpvR0BMfbkoHo4zIbVqr
-ประกายพลอย ศิริธัญญาลักษณ์,พลอย,6409610653,หญิง,16-ก.ย.-45,https://drive.google.com/open?id=1yrNx191-jk2s4NPx0lzQQcmQRqjh_aat
-ปริชมน อินทรโอสถ,ฟร้อนท์,6409682785,หญิง,19-พ.ย.-45,https://drive.google.com/open?id=1NtVZbo5ms6eG93_AF3z07qqslMIPl1bM
-ปรียนันท์ ชานุ,ปูน,6409680045,หญิง,24-ธ.ค.-45,https://drive.google.com/open?id=18ufhEga77rsDyDrXq86D7pO9oVy6RN9K
-ปานวาด จินตเสถียร,สตรอง,6409682793,หญิง,10-ก.ค.-45,https://drive.google.com/open?id=1K5Qjzor_KEqOcU9EOnTW-r4QF-l-6idu
-ปุณณ อัจฉริยปัญญา,ปุณ,6409682801,ชาย,1-ม.ค.-45,https://drive.google.com/open?id=1nqEysbJPsEtC_27CKixujQVbpNg9V_rr
-พชรพล อินทร์เลิศ,เบ็ค,6409682819,ชาย,24-มี.ค.-46,https://drive.google.com/open?id=10JzKasZU6WKW3ho4deqbiQfDdygj0Sub
-พลฤทธิ์ พ่วงพลอย,เก้า,6409682827,ชาย,28-ม.ค.-46,https://drive.google.com/open?id=1lM45zmlQ5L_natGh8qs_GJJta6J6-4aG
-พศิน แสงอรุณ,เพ,6409682835,ชาย,18-ธ.ค.-45,https://drive.google.com/open?id=1ULTFNDNMxeQ9Yy0fO1TaOxE9FBxD4_Ne
-พัชริดา พลานา,ตุ๊กตา,6409610679,หญิง,19-ต.ค.-45,https://drive.google.com/open?id=1VYqJAFrOccAUp4nA7IxB8HA9JUHTK5pP
-พีรพัฒน์ ดอนเหนือ,ดรีม,6409520084,ชาย,22-พ.ย.-45,https://drive.google.com/open?id=17w-73BzQ5Wo0gEUGl9t1d5FXsCFQDt02
-ภูริพงศ์ นวลใย,อะซัน,6409610703,ชาย,1-มี.ค.-46,https://drive.google.com/open?id=1O_lLrU1px2rQOaLoCrsdsoMbbXKGI4Dw
-มัสลิน พัสตร์วาณิช,ฝ้าย,6409682843,หญิง,3-ต.ค.-45,https://drive.google.com/open?id=142BmBSmHV5uTfX2wLoxg-hIW89u4azu2
-ยู ยามาโน่,ยู,6409682850,ชาย,19-ก.พ.-47,https://drive.google.com/open?id=1fJ_3tMiDE71qESA_8SFvt6ur1gFPf9MC
-ร้อยแก้ว ศิริวัฒน์,ออนิก,6409610729,หญิง,26-พ.ย.-46,https://drive.google.com/open?id=1lVojQVdE4-D05oCCH3GF8s51B30EBYT_
-รัชพล? สม่าหลี,สิงโต,6409610737,ชาย,20-ก.พ.-46,https://drive.google.com/open?id=1xuFVyVpybTqufncNPvAS-wiBEK5K_AdU
-วรัญญา เรืองสวัสดิ์,มี่,6409680060,หญิง,4-ก.ย.-45,https://drive.google.com/open?id=1h3LLaURwP4vyy_A-8bQBfNR92ZTEjPLb
-วรัทยา ยังสำราญ,ตาต้าร์,6409682868,หญิง,27-พ.ย.-45,https://drive.google.com/open?id=190c8dB83UDx9M7XP_r2dyV05OcHIpQ6u
-วาสิตา เยี่ยมเจริญวงศ์,มีน,6409682587,หญิง,19-มี.ค.-46,https://drive.google.com/open?id=18-DsfIyP5acsATtuRKxR3pd9EXki7lDB
-ศิวกร เกิดลาภี,ฟลุ๊ค,6409682900,ชาย,17-เม.ย.-46,https://drive.google.com/open?id=1anIpZE678OVeoFwBI9oTNdDVQRZu7xQ0
-ศุภรชัย? ทวีทอง,ริว,6409610760,ชาย,5-มี.ค.-46,https://drive.google.com/open?id=1QQOfkuEsUMHzec-DrmV86PlxjxhnCuh4
-ศุภิสรา  สวนปลิก,ชาควีน,6409610778,หญิง,6-มิ.ย.-45,https://drive.google.com/open?id=1L4f0H1M-JABBhb20XZ_1N_80pLxSpSD3
-สรัลพร อุปนันไชย,พรีม,6409610794,หญิง,29-ต.ค.-44,https://drive.google.com/open?id=1I6rCMiUzHbqulAwSH_hjFOscSJtFt8X-
-สิรกานต์ ธนบุญสมบัติ,กานต์,6409682926,ชาย,15-ก.พ.-43,https://drive.google.com/open?id=1tJM1MwoYOY2DwJD7e5BDS7BOmhNVFWmV
-สุชานรี ไชยมาดี,"ดาร์ก, จิว ",6409682595,หญิง,11-ม.ค.-46,https://drive.google.com/open?id=1CH2mhsSx4MwNNEELPNWuxr8_ZYMCOLKM
-สุพิชชา จันทร์ลอยนภา,มุ้ย,6409682934,หญิง,19-ต.ค.-44,https://drive.google.com/open?id=1iPv0b3LcDjqxPU5B0RKEyqtuA02t-W9w
-สุภัสศรณ์ สุขภูติ,แพรว,6409610802,หญิง,5-มิ.ย.-46,https://drive.google.com/open?id=1TOa8e4YvGl9s29C4JLi69GQJVfNuXUd2
-อนัลลีนา ลิภา,ฟ้า,6409682942,หญิง,2-ต.ค.-45,https://drive.google.com/open?id=1xiw9_ZoCCO21Rk8DR5RLD4KLbd32-6vY
-อิงรัก อุตตมางคพงศ์,เอิง,6409682975,หญิง,6-ก.พ.-45,https://drive.google.com/open?id=1g0oxGfZInVeuqnOXmdIJ2uc0kMHFdf8P
-พลกฤษณ์? พรรณ?วงศ์?,พุ่ม,6409680094,ชาย,16-ก.ย.-45,https://drive.google.com/open?id=1KwIuZFRToeKGrQ31C96r3tIkkpu2zR2s
-สันติภาพ สโมสร,ติ,6409680086,ชาย,7-มิ.ย.-45,https://drive.google.com/open?id=1zY2gP9hKMXxyfmD5T7-KveZXwSNYgKhs
-ภูริณัฐ สุขดี,ริว,6409610695,ชาย,25-มิ.ย.-46,https://drive.google.com/open?id=1EEx1iMbdwRmndGnd8L2aVwj0rMyWSeSh
-สรรพวิชช์ ช่องดารากุล,ก้อง,6409610786,ชาย,10-ต.ค.-45,https://drive.google.com/open?id=1Gj_UzgqW91ynWaoAX6yqcq13wf7dBivr
-นิธิกร ธนะสูตร,ไฮเนเก้น,6409682777,ชาย,5-พ.ค.-45,https://drive.google.com/open?id=1FR6Hmo355S9nvRNkymSEUShr303viICm
-ธรรณธร นิรัติศัยกุล,แบงค์,6409682546,ชาย,16-ก.ย.-45,https://drive.google.com/open?id=1InrmoA6d_vmYQCi6KUWPblQnfGeXnb42
-คุปตาภา วิสารจารุศร,วิว,6409610596,ชาย,16-พ.ค.-46,https://drive.google.com/open?id=1YsiTm_wpZ1jzGm_9ZyDqHIwozhSWUL3G
-ชานนท์ ศรีตุลาการ,จีว่า,6409682645,ชาย,26-มี.ค.-45,https://drive.google.com/open?id=19V4p4Wzv2paL0Y5grfx7wqhIk_bDyQOn
-ภูมิพิชญุตม์ คงเปี่ยม,ภูมิ,6209680062,ชาย,12-ม.ค.-44,https://drive.google.com/open?id=19V4p4Wzv2paL0Y5grfx7wqhIk_bDyQOn
+﻿code_id,student_id,firstname,nickname,lastname,,
+71;51;19,6209680021,พิมพ์นิภา,จาจา,สระทองบุญ,,
+7,6209610234,กัญจน์,ซัน,หิรัญมาศสุวรรณ,,
+20;47,6209610275,ณัฐพร,บิ๊ม,เขจรดวง,,
+16;48,6209680849,ณิชากร,จีน,สอนเนย,,
+42;41,6209610374,ธิชาพร,แก้ม,กระแจะจันทร์,,
+32;21,6209680757,เบญญาภา,ต้นข้าว,คามณิยานนท์,,
+8;9,6209610101,เอกพิชา,ปก,วิศรุตวงศา,,
+62,6209610333,ณัฏฐ์ฐิรา,อาย,อโรชพิวัฒน์,,
+5,6209610176,หิรัณย์,เนียส,ศรีรุ่งเรืองชัย,,
+25;60,6209680872,สุธิมา,เม,ปริปุณณโภค,,
+53,6209610200,ธันยธรณ์,นัน,ปานเอม,,
+73;76,6209680716,ปารียา,อุ๋มอิ๋ม,ขันธจำนงค์,,
+29,6209610226,เกียรติศักดิ์,เจมส์,จิตตรง,,
+6;33,6209610044,ศศิกานต์,ป๊อปปี้,พิศเพ็ง,,
+59,6209610135,กานชญา,กันน์,นิลพันธุ์,,
+36;11,6209610267,โชติรส,ฝ้าย,รื่นรมย์,,
+67,6209680880,ชลลดา,นัท,ศศิรัตนนิกุล,,
+11,6209610317,สถิต,เต้,ศรีวรรณ,,
+16,6209610366,กนกพร,พอน,อุบล,,
+57,6209610358,ธิติสุดา,ครีม,ชละเอม,,
+43;28,6209610341,สุจารี,แป้ง,ทิพย์กล่อม,,
+13;40,6209610143,ปรัชญา,ปริ้น,เชื้อบัณฑิต,,
+49;10,6209610168,นิธิพงศ์,พงศ์,เหรียญสัมฤทธิ์,,
+68;74;10,6209680799,ณัฐนนท์,อินซ์,ราษฎร์บริรักษ์,,
+1,6209520011,กัญญารัตน์,อิ๋ว,เกิดสวัสดิ์,,
+50,6209610119,เต็มดวง,กระต่าย,ประสพบุญ,,
+45;65,6209680732,นภสร,เตย,อินเอียว,,
+69;17,6209680070,พาณิภัค,เส้นหมี่,พันธ์โสดา,,
+46;58,6209680948,สุประวีณ์,แพร,ชัยศาสตร์,,
+4,6209610291,กุลนภา,ฟ้า,วรรณศรี,,
+72,6209680898,ขวัญจิรา,ฝ้าย,บุญชาโด,,
+17,6209680013,สุภัสสรา,จมายด์,พิมลพันธุ์,,
+15,6209680930,นิชนันท์,ตองเก้า,ศรีสัมฤทธิ์,,
+3,6209680815,นัทธมน,นัท,จงสถาพรพันธ์,,
+19,6209680054,อธิป,เอิร์ธ,บุญยงค์,,
+8,6209610077,อภิชญา,วาว,ตันตินีรนาท,,
+61,6209610184,มนัสนันท์,ดีนี่,วาลา,,
+2,6209610242,ธีรดนย์,โอม,เห็นใจชน,,
+9;64,6209610259,เพ็ญสิริ,หนูดี,บุญพิทักษ์,,
+12;55,6209610051,ปวีณ์สุดา,หยก,เพียรวิทยาเวช,,
+66;70,6209620019,ลีนวัตร,ไอซ์,เกื้อกูลกวินวงศ์,,
+56,6209680765,เทวกฤต,เทียน,เมฆฉาย,,
+44;52,6209680062,ภูมิพิชญุตม์,ภูมิ,คงเปี่ยม,,
+7,6209540019,กันย์,เฟรม,เจริญนิวาสสกุล,,
+6;14,6209610028,นัทธมน,ครีม,เลขะวัฒนะ,,
+54,6209610150,พีระวัฒน์,ต้า,อยู่โรจน์,,
+37,6209680781,ภาวินี,แพรไหม,แสวานี,,
+13;26,6209610218,กนกพล,วิว,อินทร์หอม,,
+31;34,6209620027,ภูมิรพี,อ้าย,ประเสริฐศรี,,
+27,6209610283,สุภกิณห์,การ์ตูน,ศรีบุญวงษ์,,
+75,6209610036,Tinnnapon,Tinn,Chotepachroj ,,
+22;35,6209610325,นวภูมิ,ภูมิ,พานิชย์วิไล,,
+14;18,6209680864,ชิษณุชา,เอิร์ธ,ชุ่มละมัย,,
+30;38,6209610408,ญารินดา,เดียร์,พรหมาด,,
+63,6209680856,ยุทธทัยยง,ยุทธ,ไทยสยาม,,
+12,6209610416,ณัทธร,พัด,เชิงเชาว์,,
+18;23,6209610069,กัญจน์พณิช,กัน,ตันสกุล,,
+24;39,6209510517,อิบฏีซาม,อิ๊บ,ซามะเฮง,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,

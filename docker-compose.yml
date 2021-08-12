@@ -1,0 +1,61 @@
+version: "3.4"
+
+services:
+  nginx:
+    restart: always
+    build:
+      context: ./
+      dockerfile: ./nginx/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - NGINX_LE_TZ
+    depends_on:
+      - api-server
+      - client
+
+  client:
+    build:
+      context: ./
+      dockerfile: ./client/Dockerfile.prod
+    volumes:
+      - ./client:/usr/src/client:ro
+      - /usr/src/client/node_modules
+    depends_on:
+      - api-server
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+      - CI=true
+    ports:
+      - "3000:3000"
+    stdin_open: true
+
+  api-server:
+    build:
+      context: ./
+      dockerfile: ./server/Dockerfile.prod
+    volumes:
+      - ./server:/usr/src/server:ro
+      - /usr/src/server/node_modules
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - .env
+    ports:
+      - "8861:8861"
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    volumes:
+      - mongo-db:/data/db
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=codeline
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+volumes:
+  mongo-db:

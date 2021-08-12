@@ -7,7 +7,7 @@ import { success, error } from 'consola';
 import { db_connection } from './config';
 
 const app = express();
-const PORT = process.env.SERVER_PORT || 8080;
+const PORT = process.env.SERVER_PORT || 8861;
 
 var corsOptions = {
 	origin: '*',

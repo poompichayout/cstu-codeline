@@ -6,7 +6,11 @@ const FreshmenSchema = new Schema(
 			type: String,
 			required: true,
 		},
-		raw_name: {
+		firstname: {
+			type: String,
+			required: true,
+		},
+		lastname: {
 			type: String,
 			required: true,
 		},
@@ -14,21 +18,32 @@ const FreshmenSchema = new Schema(
 			type: String,
 			required: true,
 		},
-		eldercode: {
+		code_id: {
 			type: String,
-			required: true,
 		},
-		gender: {
+		ig: {
 			type: String,
-			required: true,
 		},
-		picture_href: {
+		facebook: {
 			type: String,
-			required: true,
 		},
-		birthdate: {
+		favorite_food: {
 			type: String,
-			required: false,
+		},
+		wording: {
+			type: String,
+		},
+		hint1: {
+			type: String,
+		},
+		hint2: {
+			type: String,
+		},
+		hint3: {
+			type: String,
+		},
+		hint4: {
+			type: String,
 		},
 	},
 	{ timestamps: false }

@@ -2,19 +2,22 @@ version: "3.4"
 
 services:
   nginx-proxy:
-    image: nginx:stable-alpine
     container_name: codeline_nginx
-    restart: unless-stopped
-    networks:
-      - webproxy
-      - default
-    expose:
-      - '80'
-    environment: 
-      VIRTUAL_HOST: http://oasurastudio.live/
-      LETSENCRYPT_HOST: http://oasurastudio.live/
+    restart: always
+    build:
+      context: ./
+      dockerfile: ./nginx/Dockerfile.prod
     volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - /usr/src/ssl:/etc/nginx/ssl
+    ports:
+      - '80:80'
+      - '443:443'
+    environment: 
+      - VIRTUAL_HOST=http://oasurastudio.live/
+      - LETSENCRYPT_HOST=http://oasurastudio.live/
+      - NGINX_LE_EMAIL=poompichayout@gmail.com
+      - NGINX_LE_FQDN=http://oasurastudio.live/
+      - NGINX_LE_LETSENCRYPT=true
     depends_on:
       - api-server
       - client
@@ -51,6 +54,3 @@ networks:
     external:
       name:
         web_network
-  webproxy:
-    external: 
-      name: webproxy

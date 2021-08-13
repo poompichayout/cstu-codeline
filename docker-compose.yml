@@ -17,16 +17,14 @@ services:
       - LETSENCRYPT_HOST=http://oasurastudio.live/
       - NGINX_LE_EMAIL=poompichayout@gmail.com
       - NGINX_LE_FQDN=http://oasurastudio.live/
-      - NGINX_LE_LETSENCRYPT=true
+      - NGINX_LE_LETSENCRYPT=false
+      - NGINX_LE_TZ
     depends_on:
       - api-server
       - client
 
   client:
     image: oasurastudio/codeline-cstu-react:latest
-    build:
-      context: ./
-      dockerfile: ./client/Dockerfile.prod
     depends_on:
       - api-server
     environment:

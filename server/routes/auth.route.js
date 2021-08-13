@@ -50,6 +50,7 @@ router.post('/login', async (req, res) => {
 					codeline_student_id: codeline_data.student_id,
 					codeline_firstname: codeline_data.firstname,
 					codeline_lastname: codeline_data.lastname,
+					codeline_nickname: codeline_data.nickname,
 					codeline_favorite_food: codeline_data.favorite_food,
 					codeline_ig: codeline_data.ig,
 					codeline_facebook: codeline_data.facebook,

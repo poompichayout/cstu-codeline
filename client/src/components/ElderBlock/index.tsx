@@ -19,6 +19,7 @@ interface FreshmenData {
   codeline_student_id: string;
   codeline_firstname: string;
   codeline_lastname: string;
+  codeline_nickname: string;
   codeline_ig: string;
   codeline_facebook: string;
   codeline_favorite_food: string;
@@ -67,7 +68,7 @@ const ElderBlock = ({ title, content, button, t }: ElderBlockProps) => {
                       title={
                         freshmen.codeline_firstname +
                         " " +
-                        freshmen.codeline_lastname
+                        freshmen.codeline_lastname + " (" + freshmen.codeline_nickname + ")"
                       }
                       description={[
                         <div>

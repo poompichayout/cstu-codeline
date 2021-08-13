@@ -11,8 +11,8 @@ services:
     expose:
       - '80'
     environment: 
-      VIRTUAL_HOST: http://178.128.118.182/
-      LETSENCRYPT_HOST: http://178.128.118.182/
+      VIRTUAL_HOST: http://oasurastudio.live/
+      LETSENCRYPT_HOST: http://oasurastudio.live/
     volumes:
       - ./nginx/conf.d:/etc/nginx/conf.d:ro
     depends_on:

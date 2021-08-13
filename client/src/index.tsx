@@ -6,8 +6,9 @@ import "antd/dist/antd.css";
 import Router from "./router";
 import i18n from "./translation";
 import axios from "axios";
+import { baseAPIUrl } from "./utils"
 
-axios.defaults.baseURL = "http://localhost:8861/"
+axios.defaults.baseURL = baseAPIUrl;
 
 const App = () => (
   <BrowserRouter>

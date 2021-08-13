@@ -1,5 +1,5 @@
 # build environment
-FROM node:lts-alpine as build
+FROM node:16-alpine3.11 as build
 
 RUN apk add --update git
 WORKDIR /usr/src/client

@@ -8,9 +8,8 @@ services:
     networks:
       - webproxy
       - default
-    ports:
-      - '80:80'
-      - '443:443'
+    expose:
+      - '80'
     environment: 
       VIRTUAL_HOST: http://178.128.118.182/
       LETSENCRYPT_HOST: http://178.128.118.182/

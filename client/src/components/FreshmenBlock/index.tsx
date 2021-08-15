@@ -51,14 +51,14 @@ const MiddleBlock = ({ title, content, button, t }: FreshmenBlockProps) => {
               />
               <Input
                 name="คำใบ้รอบที่ 3"
-                placeholder="รอวันที่ 6 กันยายน 2564"
+                placeholder="รอวันที่ 30 สิงหาคม 2564"
                 value="รอวันที่ 6 กันยายน 2564"
                 readOnly={true}
                 onChange={() => {}}
               />
               <Input
                 name="คำใบ้รอบที่ 4"
-                placeholder="รอวันที่ 20 กันยายน 2564"
+                placeholder="รอวันที่ 6 กันยายน 2564"
                 value="รอวันที่ 20 กันยายน 2564"
                 readOnly={true}
                 onChange={() => {}}

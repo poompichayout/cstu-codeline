@@ -25,6 +25,9 @@ services:
 
   client:
     image: oasurastudio/codeline-cstu-react:latest
+    build:
+      context: ./
+      dockerfile: ./client/Dockerfile.prod
     depends_on:
       - api-server
     environment:

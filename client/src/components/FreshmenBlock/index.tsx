@@ -42,11 +42,10 @@ const MiddleBlock = ({ title, content, button, t }: FreshmenBlockProps) => {
                 value={user.hint1}
                 onChange={() => {}}
               />
-              <Input
+              <TextArea
                 name="คำใบ้รอบที่ 2"
-                placeholder="รอวันที่ 23 สิงหาคม 2564"
-                value="รอวันที่ 23 สิงหาคม 2564"
-                readOnly={true}
+                placeholder=""
+                value={user.hint2}
                 onChange={() => {}}
               />
               <Input

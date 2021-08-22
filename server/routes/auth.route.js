@@ -67,6 +67,7 @@ router.post('/login', async (req, res) => {
 			nickname: data.nickname,
 			role,
 			hint1: data.hint1,
+			hint2: data.hint2,
 		}:
 		{
 			student_id: data.student_id,

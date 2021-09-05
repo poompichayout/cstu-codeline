@@ -69,6 +69,7 @@ router.post('/login', async (req, res) => {
 			hint1: data.hint1,
 			hint2: data.hint2,
 			hint3: data.hint3,
+			hint4: data.hint4,
 		}:
 		{
 			student_id: data.student_id,

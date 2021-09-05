@@ -13,12 +13,12 @@ services:
       - '80:80'
       - '443:443'
     environment: 
-      - VIRTUAL_HOST=http://oasurastudio.live/
-      - LETSENCRYPT_HOST=http://oasurastudio.live/
+      - VIRTUAL_HOST=codeline-cstu.oasurastudio.live
+      - LETSENCRYPT_HOST=codeline-cstu.oasurastudio.live
       - NGINX_LE_EMAIL=poompichayout@gmail.com
-      - NGINX_LE_FQDN=http://oasurastudio.live/
-      - NGINX_LE_LETSENCRYPT=false
-      - NGINX_LE_TZ
+      - NGINX_LE_FQDN=codeline-cstu.oasurastudio.live
+      - NGINX_LE_LETSENCRYPT=true
+      - NGINX_LE_TZ=Asia/Bangkok
     depends_on:
       - api-server
       - client
